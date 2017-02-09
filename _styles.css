@@ -1,0 +1,391 @@
+html{
+  background-color:#000;
+}
+
+/*---------------BODY---------------*/
+body{
+  font-family: sans-serif;
+  display: block;
+  width: 1350px;
+  margin: auto;
+  font-size: 10pt;
+  background: #fff;
+
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+sup{
+  font-size: 50%;
+  margin:0 .2em;
+}
+
+
+/*---------------HEADER---------------*/
+header{
+  display: block;
+  height: 50px;
+  padding: 10px 30px 10px 10px;
+  background: #fff;
+}
+
+
+
+
+/*---------------MAIN NAV---------------*/
+nav{
+  display: inline-block;
+  float:left;
+  background: #fff;
+  height: auto;
+
+}
+
+nav img {
+  height: 25px;
+  width: auto;
+  margin: 10px;
+  float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+    display: inline-block;
+    color: #FF4500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 10px 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#fff;
+    color: #3d2513;
+    border-bottom: 3px double;
+    border-color: #FF4500;
+}
+
+
+
+/*---------------HELP---------------*/
+.help{
+  float: right;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.help ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.help li{
+  float: left;
+}
+
+.help a{
+  color: pink;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.help a:hover {
+    background-color:#fff;
+    color: #3d2513;
+}
+
+
+
+/*---------------FEATURED---------------*/
+.featured {
+  background: #FF4500; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #FF4500 , #f9207e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #FF4500, #f9207e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #FF4500, #f9207e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #FF4500 , #f9207e); /* Standard syntax */
+  display: inline-block;
+  color: #fff;
+  padding: 40px 0px;
+  width: inherit;
+  height: ;
+}
+
+.featured a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 175px;
+}
+
+.featured a:hover{
+  color: #3d2513;
+}
+
+.featured img{
+  display: inline-block;
+  width: auto;
+  height: 275px;
+  padding: 40px 0px;
+  margin-left: 175px;
+  float: left;
+}
+
+.featuredDescription{
+  display: inline-block;
+  width: 400px;
+  float: left;
+  margin:25px 0px 0px 60px;
+  background: ;
+}
+
+.featuredDescription h1{
+  font-size: 30pt;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+.featuredDescription h2{
+  color: #3d2513;
+  font-weight: lighter;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.featuredDescription hr{
+  border: 2px dashed #3d2513;
+  border-style: none none dashed;
+  background: none;
+  opacity:0.25;
+  margin: 20px 0px;
+}
+
+.featuredDescription p{
+  display: inline-block;
+  line-height: 2em;
+  font-size: 10pt;
+  margin: 0;
+}
+
+.featuredDescription a{
+  color: #3d2513;
+  text-decoration: underline;
+}
+
+.featuredDescription a:hover{
+  color: #fff;
+}
+
+.featuredDescription .price{
+  display: inline-block;
+  color: #fff;
+  font-size: 24pt;
+}
+
+.featuredDescription button{
+  display: inline-block;
+  background-color: #fff;
+  color: #FF4500;
+  border-color: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: .1em;
+  border-radius: 7px;
+  margin-left: 15px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.featuredDescription button:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+
+
+/*---------------DETAILS MENU---------------*/
+.detailsMenu{
+  display: block;
+  background: ;
+  padding: 30px 0 0;
+  border-bottom: 1px solid pink;
+  margin-bottom: 30px;
+  height: 30px;
+}
+
+.detailsMenu ul{
+  display: inline-block;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+.detailsMenu li{
+  display: inline-block;
+}
+
+.detailsMenu li a{
+  display: inline-block;
+  margin-right: 20px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  font-size: 14pt;
+  color:  #FF4500;
+}
+
+.detailsMenu li a:hover{
+  border-bottom: 3px solid pink;
+  color: #3d2513;
+}
+
+.detailsMenu p{
+  display: inline-block;
+  float: right;
+  margin: 0;
+}
+
+.detailsMenu a{
+  text-decoration: none;
+  color: pink;
+}
+
+.detailsMenu a:hover{
+  color: #FF4500;
+}
+
+
+
+/*---------------PRODUCT DETAILS---------------*/
+.productDetails {
+  display: block;
+  padding: 20px 175px 100px;
+  color: #3d2513;
+  line-height: 2em;
+}
+
+.productDetails h2{
+  margin: 0px;
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+.productDetails h3{
+  font-size: 14pt;
+  font-weight: lighter;
+}
+
+.productDetails p {
+  color: #a87d70;
+}
+
+
+
+
+
+
+/*---------------RECOMMENDED---------------*/
+.recommended {
+  background: #FF4500; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #FF4500 , #f9207e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #FF4500, #f9207e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #FF4500, #f9207e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #FF4500 , #f9207e); /* Standard syntax */
+  display: block;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.recommendedHeading{
+  display: block;
+  background: #ffefef;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 70px;
+}
+
+.recommendedHeading h1{
+  margin: 0px;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #3d2513;
+  letter-spacing: 1px;
+}
+
+.recommendedItem{
+  display: inline-block;
+  width: 280px;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.recommendedItem a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.recommendedItem img{
+  width: 275px;
+}
+
+.recommendedItem h1{
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 400;
+
+}
+
+.recommendedItem h2{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #3d2513;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/*---------------FOOTER---------------*/
+footer {
+  display: block;
+  height: 50px;
+  padding: 10px;
+  background: #fff;
+}
+
+.footerNav a{
+  text-transform: none;
+}
+
+.copyright{
+  display: block;
+  float: right;
+  color: #a87d70;
+}
+
+.copyright a{
+  color: #a87d70;
+}
