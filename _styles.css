@@ -1,16 +1,12 @@
-html{
-  background-color:#000;
-}
-
 /*---------------BODY---------------*/
 body{
-  font-family: sans-serif;
+  font-family: Jaldi, sans-serif;
   display: block;
-  width: 1350px;
-  margin: auto;
-  font-size: 10pt;
-  background: #fff;
-
+  background-color:#000;
+  font-size: 11pt;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
 }
 
 .float-left{
@@ -26,10 +22,14 @@ sup{
   margin:0 .2em;
 }
 
-
+.container{
+  width: 80%;
+  background-color: #fff;
+  min-width: 1100px;
+  margin: auto;
+}
 /*---------------HEADER---------------*/
 header{
-  display: block;
   height: 50px;
   padding: 10px 30px 10px 10px;
   background: #fff;
@@ -42,7 +42,6 @@ header{
 nav{
   display: inline-block;
   float:left;
-  background: #fff;
   height: auto;
 
 }
@@ -76,7 +75,6 @@ nav a {
 }
 
 nav a:hover {
-    background-color:#fff;
     color: #3d2513;
     border-bottom: 3px double;
     border-color: #FF4500;
@@ -88,7 +86,6 @@ nav a:hover {
 .help{
   float: right;
   display: inline-block;
-  padding-top: 15px;
 }
 
 .help ul{
@@ -108,11 +105,19 @@ nav a:hover {
   padding: 5px;
   margin: 10px;
   text-decoration: none;
+  text-transform: none;
 }
 
 .help a:hover {
-    background-color:#fff;
     color: #3d2513;
+    border: none;
+}
+
+.help img {
+  height: 1em;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
 }
 
 
@@ -124,17 +129,18 @@ nav a:hover {
   background: -o-linear-gradient(left, #FF4500, #f9207e); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, #FF4500, #f9207e); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #FF4500 , #f9207e); /* Standard syntax */
-  display: inline-block;
   color: #fff;
-  padding: 40px 0px;
-  width: inherit;
-  height: ;
+  display: block;
+  padding: 3% 0 5%;
+  padding-left: 11%;
+  padding-right: 11%;
+
 }
 
 .featured a{
   color: #fff;
+  display: inline-block;
   text-decoration: none;
-  margin-left: 175px;
 }
 
 .featured a:hover{
@@ -143,30 +149,29 @@ nav a:hover {
 
 .featured img{
   display: inline-block;
-  width: auto;
-  height: 275px;
-  padding: 40px 0px;
-  margin-left: 175px;
+  max-width: 50%;
+  padding-top: 50px;
+  margin-right: 8%;
   float: left;
 }
 
 .featuredDescription{
   display: inline-block;
-  width: 400px;
-  float: left;
-  margin:25px 0px 0px 60px;
-  background: ;
+  min-width: 20%;
+  max-width: 42%;
+
 }
 
 .featuredDescription h1{
-  font-size: 30pt;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  font-size: 3.5em;
   font-weight: 400;
+
 }
 
 .featuredDescription h2{
   color: #3d2513;
+  margin:0;
+  padding: 0;
   font-weight: lighter;
   font-size: 10pt;
   letter-spacing: 1px;
@@ -183,13 +188,14 @@ nav a:hover {
 .featuredDescription p{
   display: inline-block;
   line-height: 2em;
-  font-size: 10pt;
+  font-size: 1.1em;
   margin: 0;
 }
 
 .featuredDescription a{
   color: #3d2513;
   text-decoration: underline;
+  margin: 0;
 }
 
 .featuredDescription a:hover{
@@ -224,11 +230,42 @@ nav a:hover {
 
 
 
+/*---------------PRODUCT DETAILS---------------*/
+.productDetails {
+  clear: both;
+  display: block;
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 0px 0px 100px;
+  padding-left: 11%;
+  padding-right: 11%;
+  color: #3d2513;
+  line-height: 2em;
+
+}
+
+.productDetails h2{
+  margin: 0px;
+  font-size: 18pt;
+  font-weight: lighter;
+}
+
+.productDetails h3{
+  font-size: 14pt;
+  font-weight: lighter;
+}
+
+.productDetails p {
+  color: #a87d70;
+}
+
+
+
 /*---------------DETAILS MENU---------------*/
 .detailsMenu{
   display: block;
   background: ;
-  padding: 30px 0 0;
+  padding-bottom:3px;
   border-bottom: 1px solid pink;
   margin-bottom: 30px;
   height: 30px;
@@ -251,7 +288,7 @@ nav a:hover {
   margin-right: 20px;
   padding-bottom: 2px;
   text-decoration: none;
-  font-size: 14pt;
+  font-size: 1.3em;
   color:  #FF4500;
 }
 
@@ -274,33 +311,6 @@ nav a:hover {
 .detailsMenu a:hover{
   color: #FF4500;
 }
-
-
-
-/*---------------PRODUCT DETAILS---------------*/
-.productDetails {
-  display: block;
-  padding: 20px 175px 100px;
-  color: #3d2513;
-  line-height: 2em;
-}
-
-.productDetails h2{
-  margin: 0px;
-  font-size: 18pt;
-  font-weight: lighter;
-}
-
-.productDetails h3{
-  font-size: 14pt;
-  font-weight: lighter;
-}
-
-.productDetails p {
-  color: #a87d70;
-}
-
-
 
 
 
@@ -384,6 +394,7 @@ footer {
   display: block;
   float: right;
   color: #a87d70;
+  margin-right: 10px;
 }
 
 .copyright a{
