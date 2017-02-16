@@ -26,7 +26,7 @@
             <li><a href="#">Help</a></li>
             <li><a href="#">My Account</a></li>
             <!-- figure out how to include shopping cart icon below -->
-            <li><a href="#"><img src="cart.jpg" alt="shopping cart">Shopping Cart (2)</a></li>
+            <li><a href="#"><img src="cart.jpg" alt="shopping cart">Shopping Cart (<span class="cart">0</span>)</a></li>
           </ul>
         </nav>
 
@@ -49,28 +49,36 @@
 
           <h1 class="price"><sup>$</sup>120<sup>00</sup></h1>
 
-          <button type="button" name="button">Buy Now!</button>
+          <button class="button" name="button">Buy Now!</button>
 
         </section>
       </section>
 
       <section class="productDetails">
-        <section class="detailsMenu">
+        <div class="detailsMenu">
           <ul>
-            <li><a href="#">Product Details</a></li>
-            <li><a href="#">Size & Fit</a></li>
+            <li class="details">Product Details</li>
+            <li class="size">Size & Fit</li>
+            <li class="reviews"> Reviews&#x2605;&#x2605;&#x2605;&#x2605;&#9734;</li>
           </ul>
-          <p><a href="#">Reviews &#x2605;&#x2605;&#x2605;&#x2605;&#9734;</a></p>
-        </section>
+        </div>
 
-        <h2>Exciting Topic</h2>
-        <p>Content here</p>
-        <h3>Exciting Topic</h3>
-        <p>Content Here<br><br><br></p>
-        <h2>Find Your Shoe Size & Fit</h2>
-        <p>Content here<br><br></p>
-        <h2>What Our Customers Are Saying!</h2>
-        <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed with your purchase.</p>
+        <div class="detailsText">
+          <h2>Exciting Topic</h2>
+          <p>Content here</p>
+          <h3>Exciting Topic</h3>
+          <p>Content Here</p>
+        </div>
+
+        <div class="sizeText">
+          <h2>Find Your Shoe Size & Fit</h2>
+          <p>Content here</p>
+        </div>
+
+        <div class="reviewsText">
+          <h2>What Our Customers Are Saying!</h2>
+          <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed with your purchase.</p>
+        </div>
       </section>
 
       <section class="recommended">
@@ -129,6 +137,8 @@
       </footer>
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="main.js"></script>
 
